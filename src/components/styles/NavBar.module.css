@@ -1,0 +1,68 @@
+
+.navbar {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    background-color: white;
+  }
+  
+  .toggle {
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .icon {
+    margin-right: 5px;
+    width: 16px; 
+    height: 16px;
+    margin-left: 5px;
+  }
+  
+  .content {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 300px;
+    padding: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+  
+  .item {
+    display: flex;
+    margin-bottom: 12px;
+    
+  }
+  
+  .item label {
+    font-size: 15px;
+    font-weight: bold;
+    color: #888;
+    margin-bottom: 4px;
+    margin-right: 70px;
+  }
+  
+  .item select {
+    width: 100%;
+    padding: 6px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+  }
+  
+  
+  
+  .navbar select {
+    background-color: white;
+  }
+  

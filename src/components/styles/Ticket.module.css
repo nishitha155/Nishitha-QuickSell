@@ -1,0 +1,156 @@
+.ticketHeading {
+    display: flex;
+  }
+  .priorityImage, .statusHeaderImage, .priorityHeaderImage {
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+  }
+  .space {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f4f5f8;
+    min-height: 88vh;
+    
+  }
+  .columns {
+    display: flex;
+   
+    gap: 4px;
+    overflow-x: auto;
+    padding-bottom: 20px;
+  }
+  .column {
+   width:18%;
+    border-radius: 8px;
+    padding: 12px;
+    
+  }
+  .columnHeading {
+    font-size: 16px;
+    margin-bottom: 12px;
+    color: #5e6c84;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .headerAdd {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .columnInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 12px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 115px
+    
+  }
+  .cardHeading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  .ticketId {
+    color: #6b6f76;
+    font-size: 14px;
+  }
+  .userAvatarColumn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .userAvatar {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #4285f4;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .status {
+    position: absolute;
+    bottom: -2px;
+    right: -2px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 2px solid white;
+  }
+  .status.available {
+    background-color: yellow;
+  }
+  .status.unavailable {
+    background-color: grey;
+  }
+  .cardTitle {
+    font-size: 14px;
+    margin: 0 0 8px 0;
+    color: #333;
+  }
+  .cardTags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+  .tag {
+    display: inline-flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 4px;
+    padding: 2px 6px;
+    font-size: 12px;
+    color: #6b6f76;
+    border: 1px solid rgb(248, 247, 247);
+  }
+  .tag.priority {
+    background-color: white;
+  }
+  .tagIcon {
+    font-size: 10px;
+    margin-right: 4px;
+    color: #6b6f76;
+    border-radius: 48%;
+    background-color: #b3b5b9;
+    height: 10px;
+    width: 10px;
+  }
+  .headerIcon{
+    display: flex;
+    gap:8px;
+    font-size: 17px;
+    font-weight: bold;
+  }
+  @media (max-width: 1200px) {
+    .card{
+        height: 200px;
+    }
+  }
+  @media (max-width: 850px) {
+    .columns {
+      flex-direction: column;
+      align-items: center;
+    }
+    .column {
+      width: 94%;
+      max-width: 400px;
+    }
+    .card {
+      height: 120px;
+    }
+  }
